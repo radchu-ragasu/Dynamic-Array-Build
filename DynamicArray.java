@@ -4,26 +4,38 @@ class Array{
     private int size;
     private int capacity;
     static private final int initialCapacity = 16;
+    private int arr[];
 
-    static int addEnd(int value)
+    Array()
     {
-        
-
-        Array()
-        {
-            size = 0;
-            arr = new int[initialCapacity];
-        }
-
-        public void addEnd(int value){
-            if (size == capacity)
-            {
-                expandArray();
-            }
-            arr[size++]= value;
-        }
+        size = 0;
+        arr = new int[initialCapacity];
+        capacity = initialCapacity;
     }
 
+    public void addEnd(int value)
+    {
+        if (size == capacity)
+        {
+            expandArray();
+        }
+        arr[size++] = value;
+    }
+
+    public void display()
+    {
+
+    }
+
+    public void posAdd(int pos ,int value)
+    {
+
+    }
+
+    public void expandArray()
+    {
+
+    }
 }
 
 public class DynamicArray{
@@ -61,7 +73,7 @@ public class DynamicArray{
                 }
                 System.out.println("Enter the Value: ");
                 value =scan.nextInt();
-                list.posAdd(pos,value)
+                list.posAdd(pos,value);
 
         }
     }
