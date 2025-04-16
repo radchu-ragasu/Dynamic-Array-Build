@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Arrays;
 
 class Array{
     private int size;
@@ -24,7 +25,7 @@ class Array{
 
     public void display()
     {
-
+        System.out.println(Arrays.toString(arr));
     }
 
     public void posAdd(int pos ,int value)
@@ -47,11 +48,13 @@ public class DynamicArray{
 
     while (true)
     {
-        System.out.println("-----List Menu-----");
+        System.out.println("*****--List Menu--*****");
         System.out.println("1.Insert at End");
         System.out.println("2.Display the list");
         System.out.println("3.Insert at  Specified Position");
         System.out.println("4.Delete from specified Position");
+        System.out.println("5.Exit from the loop");
+        System.out.println("************************************");
         choice=scan.nextInt();
 
         switch(choice)
@@ -74,6 +77,17 @@ public class DynamicArray{
                 System.out.println("Enter the Value: ");
                 value =scan.nextInt();
                 list.posAdd(pos,value);
+            case 4:
+                System.out.println();
+                break;
+            case 5:
+                System.out.println();
+                if(choice == 5)
+                {
+                    System.out.println("OKay Tata");
+                    break;
+                }
+                break;
 
         }
     }
