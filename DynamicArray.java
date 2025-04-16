@@ -1,11 +1,26 @@
 import java.util.Scanner;
 
 class Array{
+    private int size;
+    private int capacity;
+    static private final int initialCapacity = 16;
 
     static int addEnd(int value)
     {
+        
+
+        Array()
+        {
+            size = 0;
+            arr = new int[initialCapacity];
+        }
+
         public void addEnd(int value){
-            
+            if (size == capacity)
+            {
+                expandArray();
+            }
+            arr[size++]= value;
         }
     }
 
