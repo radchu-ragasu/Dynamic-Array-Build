@@ -55,6 +55,7 @@ public class DynamicArray{
         System.out.println("4.Delete from specified Position");
         System.out.println("5.Exit from the loop");
         System.out.println("************************************");
+        System.out.println("Enter your choice: ");
         choice=scan.nextInt();
 
         switch(choice)
@@ -81,17 +82,16 @@ public class DynamicArray{
                 System.out.println();
                 break;
             case 5:
-                System.out.println();
-                if(choice == 5)
-                {
-                    System.out.println("OKay Tata");
-                    break;
-                }
+                System.out.println("The menu is ending");
+                scan.close();
+                return;
+            default:
+                System.out.println("Please enter the correct valid number :");
                 break;
 
         }
-    }
-            
 
+    }
+    
     }
 }
